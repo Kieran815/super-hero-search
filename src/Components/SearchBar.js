@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { Container } from '@material-ui/core';
-import HeroResults from "./HeroResults";
+// import HeroResults from "./HeroResults";
 
 class SearchBar extends Component {
     matches = this.props.matches;
     render() {
       return(
-        <Container>
+        <div>
           <form onSubmit={this.props.handleSubmit}>
             <input
               type="text"
@@ -16,10 +15,10 @@ class SearchBar extends Component {
             />
             <button type="submit">Locate Meta</button>
           </form>
-          <HeroResults
+          {/* <HeroResults
             matches={this.props.matches}
-          />
-        </Container>
+          /> */}
+        </div>
       );
     }
   }
