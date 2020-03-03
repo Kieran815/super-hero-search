@@ -1,11 +1,14 @@
 import React from "react";
+import { Container, Header } from "semantic-ui-react";
 
 const HeroHeader = () => {
   return (
-    <div className="header">
-      <h1>S.M.A.S.H.</h1>
+    <Container>
+      <Header as="h1" className="header">
+        S.M.A.S.H.
+      </Header>
       <h2>Super/Meta Analysis, Study, and Highlights</h2>
-    </div>
+    </Container>
   );
 }
 

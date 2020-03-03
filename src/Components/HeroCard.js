@@ -1,21 +1,42 @@
-import React, { Component } from 'react';
+import React, { Component, Link } from 'react';
+import { Card, Icon } from 'semantic-ui-react'
+
+
 
 class HeroCard extends Component {
-  constructor(props) {
-    super(props);
+  matches = this.props.matches;
+
+  // nameTag = () => {
+  //   return (`${this.props.matches.name}: ${this.props.matches.biography['full-name']}`)
+  // }
+
+  extra = () =>{
+    return (
+      <Link>
+        <Icon name='user' />
+        16 Friends
+      </Link>
+    );
   }
 
+
+
   render() {
+
     return(
         (this.props.matches === null) ?
           "" :
           this.props.matches.map(match => {
             let { id, name, powerstats, biography, appearance, work, connections, image } = match;
             return (
-              <div className="MetaCard" key={70}>
-                <h3><u>{name}: {biography["full-name"]}</u></h3>
-                <img style={{ height:"20vh", width:"auto" }} src={image.url} alt={name} />
-              </div>
+              <Card
+                key={id}
+                image={image.url}
+                header={this.nameTag}
+                meta={biography["full-name"]}
+                description={work.base}
+                extra={this.extra}
+              />
             )
           })
     );

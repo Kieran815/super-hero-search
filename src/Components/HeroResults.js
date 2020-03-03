@@ -1,25 +1,6 @@
 import React, { Component } from "react";
-import HeroCard from "./HeroCard";
-
-
-// add `Card` from Semantic-ui
-
-// <Card>
-//     <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
-//     <Card.Content>
-//       <Card.Header>Daniel</Card.Header>
-//       <Card.Meta>Joined in 2016</Card.Meta>
-//       <Card.Description>
-//         Daniel is a comedian living in Nashville.
-//       </Card.Description>
-//     </Card.Content>
-//     <Card.Content extra>
-//       <a>
-//         <Icon name='user' />
-//         10 Friends
-//       </a>
-//     </Card.Content>
-//   </Card>
+import { Card, Icon } from "semantic-ui-react";
+//import HeroCard from "./HeroCard";
 
 class HeroResults extends Component {
 
@@ -29,15 +10,15 @@ class HeroResults extends Component {
       matches === null ?
         "Search Meta Name" :
         matches.map(match => {
-          let { id, name, biography, image } = match;
+          let { id, name, biography, work, image } = match;
           return (
-            <div
-              className="MetaCard"
+            <Card
               key={id}
-            >
-              // <h3><u>{name}: {biography["full-name"]}</u></h3>
-              // <img style={{ height:"20vh", width:"auto" }} src={image.url} alt={name} />
-            </div>
+              image={image.url}
+              header={name}
+              meta={biography["full-name"]}
+              description={work.base}
+            />
           );
         })
     );
@@ -45,11 +26,7 @@ class HeroResults extends Component {
 
   render() {
     return (
-      <div
-        container
-        justify="space-between"
-        alignItems="center"
-      >
+      <div className="Container">
         {this.metaOptions()}
       </div>
     );

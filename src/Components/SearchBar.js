@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import HeroResults from "./HeroResults";
+import HeroResults from "./HeroResults";
 
 class SearchBar extends Component {
     matches = this.props.matches;
@@ -15,9 +15,11 @@ class SearchBar extends Component {
             />
             <button type="submit">Locate Meta</button>
           </form>
-          {/* <HeroResults
+        <br />
+        <br />
+          <HeroResults
             matches={this.props.matches}
-          /> */}
+          />
         </div>
       );
     }
