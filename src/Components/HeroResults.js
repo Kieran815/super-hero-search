@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { Card, Icon } from "semantic-ui-react";
-//import HeroCard from "./HeroCard";
+import HeroCard from "./HeroCard";
 
 class HeroResults extends Component {
 
   metaOptions = (props) => {
     let matches = this.props.matches;
+
+
+
     return (
       matches === null ?
         "Search Meta Name" :
@@ -18,6 +21,7 @@ class HeroResults extends Component {
               header={name}
               meta={biography["full-name"]}
               description={work.base}
+              onClick={this.props.setHero}
             />
           );
         })

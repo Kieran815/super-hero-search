@@ -2,14 +2,21 @@ import React, { Component } from "react";
 import HeroHeader from "./HeroHeader";
 import SearchBar from "./SearchBar";
 import HeroCard from "./HeroCard";
+import HeroResults from "./HeroResults";
 
 import { Container } from "semantic-ui-react";
 
 class App extends Component {
   state = {
     searchName: "",
-    matches: null
+    matches: null,
+    selectedHero: null
   };
+
+  setHero = () => {
+    this.setState({ selectedHero: this.state.matches.index });
+    console.log(this.state.selectedHero);
+  }
 
   // sets `state` using value from `input`
   handleChange = (event) => {
@@ -35,14 +42,17 @@ class App extends Component {
     return (
       <Container>
         <HeroHeader />
-        <Container>
-          <SearchBar
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit}
-            matches={this.state.matches}
-          />
-        </Container>
-      </Container>
+        <SearchBar
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          matches={this.state.matches}
+        />
+        <HeroResults
+          matches={this.state.matches}
+          setHero={this.setHero}
+        />
+    </Container>
+
     )
   }
 
