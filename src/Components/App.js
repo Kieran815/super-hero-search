@@ -10,12 +10,11 @@ class App extends Component {
   state = {
     searchName: "",
     matches: null,
-    selectedHero: null
+    selectedHero: ""
   };
 
   setHero = () => {
-    this.setState({ selectedHero: this.state.matches.index });
-    console.log(this.state.selectedHero);
+    console.log(this.state.matches.index);
   }
 
   // sets `state` using value from `input`
@@ -26,16 +25,20 @@ class App extends Component {
   // `onSubmit`, handles sending state to api requst and returns JSON
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Searching For ${this.state.searchName}`);
-    fetch(`https://superheroapi.com/api/10215225651027511/search/${this.state.searchName}`)
-      .then((res) => {
-        return res.json();
-      })
-      .then(data => {
-        this.setState({ matches: data.results });
-        console.log(this.state.matches);
-      })
-      .catch(error => console.error(`Error: ${error}`));
+    if (this.state.searchName === "") {
+      alert('Please Enter Meta Name');
+    } else {
+      console.log(`Searching For ${this.state.searchName}`);
+      fetch(`https://superheroapi.com/api/10215225651027511/search/${this.state.searchName}`)
+        .then((res) => {
+          return res.json();
+        })
+        .then(data => {
+          this.setState({ matches: data.results });
+          console.log(this.state.matches);
+        })
+        .catch(error => console.error(`Error: ${error}`));
+    }
   }
 
   render() {

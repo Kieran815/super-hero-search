@@ -6,13 +6,11 @@ class HeroResults extends Component {
 
   metaOptions = (props) => {
     let matches = this.props.matches;
-
-
-
     return (
       matches === null ?
         "Search Meta Name" :
-        matches.map(match => {
+        matches.map((match, index) => {
+          console.log(index);
           let { id, name, biography, work, image } = match;
           return (
             <Card
@@ -21,7 +19,7 @@ class HeroResults extends Component {
               header={name}
               meta={biography["full-name"]}
               description={work.base}
-              onClick={this.props.setHero}
+              onClick={props.setHero}
             />
           );
         })
