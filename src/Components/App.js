@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import HeroHeader from "./HeroHeader";
 import SearchBar from "./SearchBar";
-import HeroCard from "./HeroCard";
 import HeroResults from "./HeroResults";
 
 import { Container } from "semantic-ui-react";
@@ -52,7 +51,6 @@ class App extends Component {
         />
         <HeroResults
           matches={this.state.matches}
-          setHero={this.setHero}
         />
     </Container>
 

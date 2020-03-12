@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Card, Icon } from "semantic-ui-react";
-import HeroCard from "./HeroCard";
+import { Card } from "semantic-ui-react";
+import "./HeroResults.css";
 
 class HeroResults extends Component {
 
@@ -8,7 +8,9 @@ class HeroResults extends Component {
     let matches = this.props.matches;
     return (
       matches === null ?
-        "Search Meta Name" :
+        "Enter Search Params" :
+      matches === undefined ?
+        "Couldn't Find Hero :/" :
         matches.map((match, index) => {
           console.log(index);
           let { id, name, biography, work, image } = match;
@@ -19,7 +21,6 @@ class HeroResults extends Component {
               header={name}
               meta={biography["full-name"]}
               description={work.base}
-              onClick={props.setHero}
             />
           );
         })
