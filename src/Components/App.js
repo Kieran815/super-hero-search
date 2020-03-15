@@ -1,15 +1,16 @@
+// 10215225651027511
+
+
 import React, { Component } from "react";
 import HeroHeader from "./HeroHeader";
 import SearchBar from "./SearchBar";
 import HeroResults from "./HeroResults";
-
-import { Container } from "semantic-ui-react";
+import "./App.css";
 
 class App extends Component {
   state = {
     searchName: "",
-    matches: null,
-    selectedHero: ""
+    matches: null
   };
 
   setHero = () => {
@@ -18,7 +19,7 @@ class App extends Component {
 
   // sets `state` using value from `input`
   handleChange = (event) => {
-    this.setState({ searchName:event.target.value })
+    this.setState({ searchName:event.target.value });
   };
 
   // `onSubmit`, handles sending state to api requst and returns JSON
@@ -27,7 +28,6 @@ class App extends Component {
     if (this.state.searchName === "") {
       alert('Please Enter Meta Name');
     } else {
-      console.log(`Searching For ${this.state.searchName}`);
       fetch(`https://superheroapi.com/api/10215225651027511/search/${this.state.searchName}`)
         .then((res) => {
           return res.json();
@@ -42,7 +42,7 @@ class App extends Component {
 
   render() {
     return (
-      <Container>
+      <div>
         <HeroHeader />
         <SearchBar
           handleChange={this.handleChange}
@@ -52,7 +52,7 @@ class App extends Component {
         <HeroResults
           matches={this.state.matches}
         />
-    </Container>
+    </div>
 
     )
   }
