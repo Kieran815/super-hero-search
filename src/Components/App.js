@@ -43,12 +43,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HeroHeader />
-        <SearchBar
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-          matches={this.state.matches}
-        />
+        <div className="headGroup">
+          <HeroHeader />
+          <SearchBar
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+            matches={this.state.matches}
+          />
+        </div>
         <HeroResults
           matches={this.state.matches}
         />

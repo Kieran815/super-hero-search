@@ -1,4 +1,9 @@
 body {
   background-color: black;
-  
+}
+
+.headGroup {
+  background: url("../Images/blackbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
