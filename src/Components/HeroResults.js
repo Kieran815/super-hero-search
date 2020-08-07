@@ -3,6 +3,16 @@ import "./HeroResults.css";
 import HeroCard from "./HeroCard";
 
 class HeroResults extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedHero: null
+    }
+  }
+
+  selectHero = () => {
+    this.setState({ selectedHero: null })
+  }
 
   metaOptions = (props) => {
     let matches = this.props.matches;
@@ -17,7 +27,7 @@ class HeroResults extends Component {
               key={index}
               match={match}
             />
-          );
+          )
         })
     );
   }

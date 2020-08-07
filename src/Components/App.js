@@ -13,16 +13,12 @@ class App extends Component {
     matches: null
   };
 
-  setHero = () => {
-    console.log(this.state.matches.index);
-  }
-
   // sets `state` using value from `input`
   handleChange = (event) => {
     this.setState({ searchName:event.target.value });
   };
 
-  // `onSubmit`, handles sending state to api requst and returns JSON
+  // `onSubmit`, handles sending state to api request and returns JSON
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.state.searchName === "") {
@@ -45,12 +41,12 @@ class App extends Component {
       <div>
         <div className="headGroup">
           <HeroHeader />
-          <SearchBar
+        </div>
+        <SearchBar
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             matches={this.state.matches}
           />
-        </div>
         <HeroResults
           matches={this.state.matches}
         />

@@ -3,7 +3,7 @@ body {
 }
 
 .headGroup {
-  background: url("../Images/blackbanner.jpg");
-  background-repeat: no-repeat;
+  background: url("../Images/headerBackground.jpg");
+  background-repeat: repeat;
   background-size: cover;
 }

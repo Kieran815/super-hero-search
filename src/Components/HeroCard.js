@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
-import "./HeroCard.css"
+import { Card, Image } from 'semantic-ui-react';
 
 class HeroCard extends React.Component {
   constructor(props) {
@@ -16,20 +15,15 @@ class HeroCard extends React.Component {
     return (
       <div>
         <div className="cardOption">
-          <Card
-            key={id}
-            image={image.url}
-            header={name}
-            description={work.base}
-            onClick={()=>{
-              this.setState({ isOpen: !this.state.isOpen })
-            }}
-          />
           {this.state.isOpen ?
-            <Card>
-              <Card.Header>Name: {biography["full-name"]}</Card.Header>
+            <Card
+              key={id}
+              onClick={()=>{this.setState({ isOpen: !this.state.isOpen })}}
+            >
+              <Image src={image.url} alt={`${name}`} />
+              <Card.Header>Name: {name}</Card.Header>
+              <Card.Header>AKA: {biography["full-name"]}</Card.Header>
               <Card.Meta>
-                <span className='date'>Publisher: {biography.publisher}</span><br/>
                 <span className='date'>First Appearance: {biography["first-appearance"]}</span>
               </Card.Meta>
               <Card.Content>
@@ -42,6 +36,7 @@ class HeroCard extends React.Component {
                 <Card.Description>Hair: {appearance["hair-color"]}</Card.Description>
               </Card.Content>
               <Card.Content>Occupation: {work.occupation}</Card.Content>
+              <Card.Content>Known Locations: {work.base}</Card.Content>
               <Card.Content>
                 Alter Egos: {biography["alter-egos"]}
               </Card.Content>
@@ -52,7 +47,15 @@ class HeroCard extends React.Component {
               <Card.Content>Relatives: {connections.relatives}</Card.Content>
             </Card>
             :
-            null
+            <Card
+              key={id}
+              image={image.url}
+              header={name}
+              description={work.base}
+              onClick={()=>{
+                this.setState({ isOpen: !this.state.isOpen })
+              }}
+            />
           }
         </div>
       </div>
