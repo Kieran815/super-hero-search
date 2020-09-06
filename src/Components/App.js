@@ -1,16 +1,15 @@
-// 10215225651027511
-
-
 import React, { Component } from "react";
 import HeroHeader from "./HeroHeader";
 import SearchBar from "./SearchBar";
 import HeroResults from "./HeroResults";
 import "./App.css";
 
+require('dotenv').config()
+
 class App extends Component {
   state = {
     searchName: "",
-    matches: null
+    matches: []
   };
 
   // sets `state` using value from `input`
@@ -24,7 +23,7 @@ class App extends Component {
     if (this.state.searchName === "") {
       alert('Please Enter Meta Name');
     } else {
-      fetch(`https://superheroapi.com/api/10215225651027511/search/${this.state.searchName}`)
+      fetch(`https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/` + process.env.HERO_API + `/search/${this.state.searchName}`)
         .then((res) => {
           return res.json();
         })

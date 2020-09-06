@@ -34,7 +34,7 @@ class HeroResults extends Component {
 
   render() {
     return (
-      <div className="Container" style={{ display: 'flex', alignItems: "flex-start"}}>
+      <div className="Container">
         {this.metaOptions()}
       </div>
     );

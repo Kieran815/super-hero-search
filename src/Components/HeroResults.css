@@ -1,5 +1,9 @@
 .Container {
   background-color: rgb(113, 82, 158);
+  background-image: url('../Images/city.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border: 1px solid black;
   display: flex;
   align-items: center;

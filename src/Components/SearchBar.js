@@ -11,7 +11,7 @@ const SearchBar = (props) => {
           id="MetaSearchBar"
           placeholder="Enter Meta Name"
           onChange={handleChange}
-        />
+        /><br/>
         <button type="submit" className="subBtn">Locate Meta</button>
       </form>
     </div>
