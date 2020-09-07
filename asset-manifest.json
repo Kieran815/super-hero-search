@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/smash-meta-search/static/css/main.eee9b5b8.chunk.css",
-    "main.js": "/smash-meta-search/static/js/main.30e44250.chunk.js",
-    "main.js.map": "/smash-meta-search/static/js/main.30e44250.chunk.js.map",
-    "runtime-main.js": "/smash-meta-search/static/js/runtime-main.757f873e.js",
-    "runtime-main.js.map": "/smash-meta-search/static/js/runtime-main.757f873e.js.map",
-    "static/js/2.307b7385.chunk.js": "/smash-meta-search/static/js/2.307b7385.chunk.js",
-    "static/js/2.307b7385.chunk.js.map": "/smash-meta-search/static/js/2.307b7385.chunk.js.map",
-    "index.html": "/smash-meta-search/index.html",
-    "precache-manifest.c68f2d7459510ec1d49cc68cac2e4c85.js": "/smash-meta-search/precache-manifest.c68f2d7459510ec1d49cc68cac2e4c85.js",
-    "service-worker.js": "/smash-meta-search/service-worker.js",
-    "static/css/main.eee9b5b8.chunk.css.map": "/smash-meta-search/static/css/main.eee9b5b8.chunk.css.map",
-    "static/js/2.307b7385.chunk.js.LICENSE.txt": "/smash-meta-search/static/js/2.307b7385.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/smash-meta-search/static/media/chicagoSkyline.8fcf0fa8.jpg",
-    "static/media/HeroResults.css": "/smash-meta-search/static/media/city.fcfea62a.jpg"
+    "main.css": "/super-hero-search/static/css/main.136d69a4.chunk.css",
+    "main.js": "/super-hero-search/static/js/main.20a774af.chunk.js",
+    "main.js.map": "/super-hero-search/static/js/main.20a774af.chunk.js.map",
+    "runtime-main.js": "/super-hero-search/static/js/runtime-main.fde8cfa9.js",
+    "runtime-main.js.map": "/super-hero-search/static/js/runtime-main.fde8cfa9.js.map",
+    "static/js/2.41ce42f2.chunk.js": "/super-hero-search/static/js/2.41ce42f2.chunk.js",
+    "static/js/2.41ce42f2.chunk.js.map": "/super-hero-search/static/js/2.41ce42f2.chunk.js.map",
+    "index.html": "/super-hero-search/index.html",
+    "precache-manifest.c8073c9cf10df8f580302aa2f417f135.js": "/super-hero-search/precache-manifest.c8073c9cf10df8f580302aa2f417f135.js",
+    "service-worker.js": "/super-hero-search/service-worker.js",
+    "static/css/main.136d69a4.chunk.css.map": "/super-hero-search/static/css/main.136d69a4.chunk.css.map",
+    "static/js/2.41ce42f2.chunk.js.LICENSE.txt": "/super-hero-search/static/js/2.41ce42f2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/super-hero-search/static/media/chicagoSkyline.8fcf0fa8.jpg",
+    "static/media/HeroResults.css": "/super-hero-search/static/media/city.fcfea62a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.757f873e.js",
-    "static/js/2.307b7385.chunk.js",
-    "static/css/main.eee9b5b8.chunk.css",
-    "static/js/main.30e44250.chunk.js"
+    "static/js/runtime-main.fde8cfa9.js",
+    "static/js/2.41ce42f2.chunk.js",
+    "static/css/main.136d69a4.chunk.css",
+    "static/js/main.20a774af.chunk.js"
   ]
 }
