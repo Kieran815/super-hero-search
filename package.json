@@ -1,6 +1,6 @@
 {
-  "name": "smash-meta-search",
-  "homepage": "https://kieran815.github.io/smash-meta-search",
+  "name": "super-hero-search",
+  "homepage": "https://kieran815.github.io/super-hero-search/",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
