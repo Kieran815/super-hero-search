@@ -23,7 +23,7 @@ class App extends Component {
     if (this.state.searchName === "") {
       alert('Please Enter Meta Name');
     } else {
-      fetch(`https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/` + process.env.HERO_API + `/search/${this.state.searchName}`)
+      fetch(`https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/${process.env.REACT_APP_HERO_API}/search/${this.state.searchName}`)
         .then((res) => {
           return res.json();
         })
