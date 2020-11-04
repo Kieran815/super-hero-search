@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import HeroHeader from "./HeroHeader";
 import SearchBar from "./SearchBar";
 import HeroResults from "./HeroResults";
+import HeroFooter from "./HeroFooter";
 import "./App.css";
 
 require('dotenv').config()
 
 class App extends Component {
   state = {
-    searchName: "",
+    searchName: "Batman",
     matches: []
   };
 
   // sets `state` using value from `input`
   handleChange = (event) => {
-    this.setState({ searchName:event.target.value });
+    this.setState({ searchName: event.target.value });
   };
 
   // `onSubmit`, handles sending state to api request and returns JSON
@@ -38,9 +39,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="headGroup">
-          <HeroHeader />
-        </div>
+        <HeroHeader />
         <SearchBar
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
@@ -49,6 +48,9 @@ class App extends Component {
         <HeroResults
           matches={this.state.matches}
         />
+        <div className="footer">
+          <HeroFooter />
+        </div>
     </div>
 
     )

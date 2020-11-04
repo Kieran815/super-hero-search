@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./HeroResults.css";
 import HeroCard from "./HeroCard";
+import "./HeroResults.css";
 
 class HeroResults extends Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class HeroResults extends Component {
 
   render() {
     return (
-      <div className="Container">
+      <div className="HeroResults">
         {this.metaOptions()}
       </div>
     );

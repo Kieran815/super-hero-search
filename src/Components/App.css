@@ -1,12 +1,20 @@
 body {
-  background-color: black;
+  background-color: #7F8086;
+  background-image: url('./BrotherEye.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.headGroup {
-  background-image: url("../Images/chicagoSkyline.jpg");
-  background-size: 100%;
-  background-position: bottom;
-  background-size: fit;
-  height: 30vh;
-  width: 100%;
+.footer {
+  position: fixed;
+  background-color: rgba(8, 8, 8, .75);
+  bottom: 0;
+  width: 100vw;
 }

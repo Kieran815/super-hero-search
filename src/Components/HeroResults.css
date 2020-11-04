@@ -1,15 +1,15 @@
-.Container {
-  background-color: rgb(113, 82, 158);
-  background-image: url('../Images/city.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 1px solid black;
+.HeroResults {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  min-height: 2em;
-  flex-wrap: wrap;
-  margin: 1em;
-  padding: 1em;
+  margin-bottom: 2em;
+}
+
+
+@media only screen and (min-width: 500px) {
+  .HeroResults {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
