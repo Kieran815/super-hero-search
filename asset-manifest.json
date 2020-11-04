@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/super-hero-search/static/css/main.136d69a4.chunk.css",
-    "main.js": "/super-hero-search/static/js/main.20a774af.chunk.js",
-    "main.js.map": "/super-hero-search/static/js/main.20a774af.chunk.js.map",
+    "main.css": "/super-hero-search/static/css/main.f1bad912.chunk.css",
+    "main.js": "/super-hero-search/static/js/main.0136b951.chunk.js",
+    "main.js.map": "/super-hero-search/static/js/main.0136b951.chunk.js.map",
     "runtime-main.js": "/super-hero-search/static/js/runtime-main.fde8cfa9.js",
     "runtime-main.js.map": "/super-hero-search/static/js/runtime-main.fde8cfa9.js.map",
-    "static/js/2.41ce42f2.chunk.js": "/super-hero-search/static/js/2.41ce42f2.chunk.js",
-    "static/js/2.41ce42f2.chunk.js.map": "/super-hero-search/static/js/2.41ce42f2.chunk.js.map",
+    "static/js/2.4075e225.chunk.js": "/super-hero-search/static/js/2.4075e225.chunk.js",
+    "static/js/2.4075e225.chunk.js.map": "/super-hero-search/static/js/2.4075e225.chunk.js.map",
     "index.html": "/super-hero-search/index.html",
-    "precache-manifest.c8073c9cf10df8f580302aa2f417f135.js": "/super-hero-search/precache-manifest.c8073c9cf10df8f580302aa2f417f135.js",
+    "precache-manifest.f627b542c44886520e18587809d09131.js": "/super-hero-search/precache-manifest.f627b542c44886520e18587809d09131.js",
     "service-worker.js": "/super-hero-search/service-worker.js",
-    "static/css/main.136d69a4.chunk.css.map": "/super-hero-search/static/css/main.136d69a4.chunk.css.map",
-    "static/js/2.41ce42f2.chunk.js.LICENSE.txt": "/super-hero-search/static/js/2.41ce42f2.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/super-hero-search/static/media/chicagoSkyline.8fcf0fa8.jpg",
-    "static/media/HeroResults.css": "/super-hero-search/static/media/city.fcfea62a.jpg"
+    "static/css/main.f1bad912.chunk.css.map": "/super-hero-search/static/css/main.f1bad912.chunk.css.map",
+    "static/js/2.4075e225.chunk.js.LICENSE.txt": "/super-hero-search/static/js/2.4075e225.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/super-hero-search/static/media/BrotherEye.a848b4d1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.fde8cfa9.js",
-    "static/js/2.41ce42f2.chunk.js",
-    "static/css/main.136d69a4.chunk.css",
-    "static/js/main.20a774af.chunk.js"
+    "static/js/2.4075e225.chunk.js",
+    "static/css/main.f1bad912.chunk.css",
+    "static/js/main.0136b951.chunk.js"
   ]
 }
