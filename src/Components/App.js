@@ -9,7 +9,7 @@ require('dotenv').config()
 
 class App extends Component {
   state = {
-    searchName: "Batman",
+    searchName: "Batman", // defaults to Batman, because Yeah Batman.
     matches: []
   };
 
